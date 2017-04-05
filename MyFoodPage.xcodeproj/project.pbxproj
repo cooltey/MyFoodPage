@@ -14,6 +14,7 @@
 		416CF07B1E958A4800C13243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 416CF0791E958A4800C13243 /* LaunchScreen.storyboard */; };
 		416CF0861E958A4800C13243 /* MyFoodPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416CF0851E958A4800C13243 /* MyFoodPageTests.swift */; };
 		416CF0911E958A4800C13243 /* MyFoodPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416CF0901E958A4800C13243 /* MyFoodPageUITests.swift */; };
+		416CF0A11E95A9D000C13243 /* CustomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416CF0A01E95A9D000C13243 /* CustomeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		416CF08C1E958A4800C13243 /* MyFoodPageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFoodPageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		416CF0901E958A4800C13243 /* MyFoodPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFoodPageUITests.swift; sourceTree = "<group>"; };
 		416CF0921E958A4800C13243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		416CF0A01E95A9D000C13243 /* CustomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				416CF0771E958A4800C13243 /* Assets.xcassets */,
 				416CF0791E958A4800C13243 /* LaunchScreen.storyboard */,
 				416CF07C1E958A4800C13243 /* Info.plist */,
+				416CF0A01E95A9D000C13243 /* CustomeTableViewCell.swift */,
 			);
 			path = MyFoodPage;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				416CF0A11E95A9D000C13243 /* CustomeTableViewCell.swift in Sources */,
 				416CF0731E958A4800C13243 /* ViewController.swift in Sources */,
 				416CF0711E958A4800C13243 /* AppDelegate.swift in Sources */,
 			);

@@ -21,6 +21,32 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return restaurant.count
     }
     
+    // click item
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        
+//        // find second story board
+//        let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+//        // get destination
+//        let destination = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as UIViewController
+//        
+//        let navigationController = UINavigationController()
+//        
+//        navigationController.pushViewController(destination, animated: true)
+//        
+//        print("test")
+//        print(navigationController)
+        
+        let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+        
+        if let resultController = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController {
+            let navController = UINavigationController(rootViewController: resultController) // Creating a navigation controller with resultController at the root of the navigation stack.
+            self.present(navController, animated:true, completion: nil)
+        }
+        
+    }
+    
     // display content in the cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         

@@ -13,7 +13,11 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     
     var restaurant = ["McDonald's", "Wendy's", "Burger King", "Jack in the Box"]
-    var restaurant_detail = ["0.5mi", "1.2mi", "1.5mi", "1.7mi"]
+    var restaurant_location = [[37.457278, -121.909285], [37.505761, -121.972298], [37.490525, -121.928100], [37.492545, -121.926858]]
+    var restaurant_detail = ["McDonald's (or simply as McD) is an American hamburger and fast food restaurant chain. It was founded in 1940 as a barbecue restaurant operated by Richard and Maurice McDonald.",
+                             "Wendy's is an American international fast food restaurant chain founded by Dave Thomas on November 15, 1969, in Columbus, Ohio, United States. The company moved its headquarters to Dublin, Ohio, on January 29, 2006. ",
+                             "Burger King (BK) is an American global chain of hamburger fast food restaurants. Headquartered in the unincorporated area of Miami-Dade County, Florida, the company was founded in 1953 as InstaBurger King, a Jacksonville, Florida-based restaurant chain.",
+                             "Jack in the Box is an American fast-food restaurant chain founded February 21, 1951, by Robert O. Peterson in San Diego, California, where it is headquartered."]
     var restaurant_logo = ["mc.png", "wendys.jpg", "bk.png", "jib.png"]
     
     // count items in the tableview
@@ -41,7 +45,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let storyboard = UIStoryboard(name: "Detail", bundle: nil)
         
         if let resultController = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController {
-            let navController = UINavigationController(rootViewController: resultController) // Creating a navigation controller with resultController at the root of the navigation stack.
+            
+            // pass data
+            resultController.restaurantLogo       = restaurant_logo[indexPath.row]
+            resultController.restaurantDesc       = restaurant_detail[indexPath.row]
+            resultController.restaurantName       = restaurant[indexPath.row]
+            
+            
+            let navController = UINavigationController(rootViewController: resultController)
+            
             self.present(navController, animated:true, completion: nil)
         }
         

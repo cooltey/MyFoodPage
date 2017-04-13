@@ -15,6 +15,8 @@
 		416CF0861E958A4800C13243 /* MyFoodPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416CF0851E958A4800C13243 /* MyFoodPageTests.swift */; };
 		416CF0911E958A4800C13243 /* MyFoodPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416CF0901E958A4800C13243 /* MyFoodPageUITests.swift */; };
 		416CF0A11E95A9D000C13243 /* CustomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416CF0A01E95A9D000C13243 /* CustomeTableViewCell.swift */; };
+		4199F4921E9F584600A76898 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4199F4911E9F584600A76898 /* WebView.storyboard */; };
+		4199F4961E9F598900A76898 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4199F4951E9F598900A76898 /* WebViewController.swift */; };
 		41B938851E9608B500014644 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B938841E9608B500014644 /* Detail.storyboard */; };
 		41B938871E9608E300014644 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B938861E9608E300014644 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,8 @@
 		416CF0901E958A4800C13243 /* MyFoodPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFoodPageUITests.swift; sourceTree = "<group>"; };
 		416CF0921E958A4800C13243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		416CF0A01E95A9D000C13243 /* CustomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeTableViewCell.swift; sourceTree = "<group>"; };
+		4199F4911E9F584600A76898 /* WebView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
+		4199F4951E9F598900A76898 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		41B938841E9608B500014644 /* Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		41B938861E9608E300014644 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +116,8 @@
 				416CF0A01E95A9D000C13243 /* CustomeTableViewCell.swift */,
 				41B938841E9608B500014644 /* Detail.storyboard */,
 				41B938861E9608E300014644 /* DetailViewController.swift */,
+				4199F4911E9F584600A76898 /* WebView.storyboard */,
+				4199F4951E9F598900A76898 /* WebViewController.swift */,
 			);
 			path = MyFoodPage;
 			sourceTree = "<group>";
@@ -244,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4199F4921E9F584600A76898 /* WebView.storyboard in Resources */,
 				416CF07B1E958A4800C13243 /* LaunchScreen.storyboard in Resources */,
 				416CF0781E958A4800C13243 /* Assets.xcassets in Resources */,
 				416CF0761E958A4800C13243 /* Main.storyboard in Resources */,
@@ -275,6 +282,7 @@
 				416CF0A11E95A9D000C13243 /* CustomeTableViewCell.swift in Sources */,
 				416CF0731E958A4800C13243 /* ViewController.swift in Sources */,
 				416CF0711E958A4800C13243 /* AppDelegate.swift in Sources */,
+				4199F4961E9F598900A76898 /* WebViewController.swift in Sources */,
 				41B938871E9608E300014644 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
